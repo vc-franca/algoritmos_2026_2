@@ -33,7 +33,7 @@
 
 # print(menor)
 
-# ------------------------------------ EX4 ----------------------------------- #
+# ------------------------------------ EX3 ----------------------------------- #
 # l = []
 
 # maior = 0
@@ -52,6 +52,27 @@
 # print(f'Maior número: {maior}')
 # print(f'índice do maior número: {ind_maior}')
 
+# ------------------------------------ EX4 ----------------------------------- #
+# L = []
+
+# soma_par = 0
+# soma_ind_par = 0
+
+# for i in range(10):
+#     x = int(input())
+
+#     L.append(x)
+
+#     if x % 2 == 0:
+#         soma_par += x
+
+#     if i % 2 == 0:
+#         soma_ind_par += x
+
+# print(L)
+# print(soma_par)
+# print(soma_ind_par)
+
 # ------------------------------------- x ------------------------------------ #
 # l = [15, 23, 4, 5, 6, 11]
 # l2 = l[:]
@@ -64,7 +85,6 @@
 # for i in range(5, 0, -1):
 #     print(L[:])
 
-
 #     num = int(input(f'digite o {i+1}º número: '))
 #     L.append(num)
 
@@ -75,24 +95,42 @@
 
 # print('inverso: {}')
 
-# ---------------------------------- PROJETO --------------------------------- #
-dados_login = ('123', 'recife') # tupla (lista imutável)
+ # ---------------------------------------------------------------------------- #
+ #                                    PROJETO                                   #
+ # ---------------------------------------------------------------------------- #
+# dados_login = ('123', 'recife') # tupla (lista imutável)
 
-entrada_usuario = input('Digite o CPF: ')
-entrada_senha = input('Digite a senha: ')
+# entrada_usuario = input('Digite o CPF: ')
+# entrada_senha = input('Digite a senha: ')
 
-def logar():
-    if entrada_usuario != dados_login[0]:
-        print('CPF não encontrado')
-        return
+# def logar():
+#     if entrada_usuario != dados_login[0]:
+#         print('CPF não encontrado')
+#         return
 
-    if entrada_senha != dados_login[1]:
-        print('senha incorreta')
-        return
+#     if entrada_senha != dados_login[1]:
+#         print('senha incorreta')
+#         return
 
-    print('logado com sucesso')
-    print('1- consultar saldo')
-    print('2- depositar')
-    print('3- sair')
+#     print('logado com sucesso')
+#     print('1- consultar saldo')
+#     print('2- depositar')
+#     print('3- sair')
 
-logar()
+# logar()
+
+# ------------------------------------ EX8 ----------------------------------- #
+# L = []
+
+# while True:
+#     palavra = input("digite uma palavra: ")
+
+#     if palavra == '':
+#         break
+
+#     if not palavra in L:
+#         L.append(palavra)
+
+# print('palavras digitadas: ')
+# for palavra in L:
+#     print(palavra)
