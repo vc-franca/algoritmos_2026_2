@@ -31,10 +31,26 @@
 # print(intervalo4)
 
 # ------------------------------------ EX2 ----------------------------------- #
-sistemas = ('Windows Server', 'Unix', 'Linux', 'Netware', 'MacOS', 'TempleOS', 'Outro')
+# votos = [0 for i in range(1, 10)]
+# sistemas = ['Windows Server', 'Unix', 'Linux', 'Netware', 'MacOS', 'TempleOS', 'Outro']
 
-h = [0 for i in range(1, 10)]
+# while True:
+#     voto = int(input('Voto: '))
 
-h[1] += 1
-h[2] += 1
+#     if voto == 0:
+#         break
 
+#     if 0 < voto <= 6:
+#         votos[voto] += 1
+
+# print('Sistemas operacional | Votos | %')
+# print(('-'*20))
+
+# for i in range(7):
+#     print(f'{sistemas[i]} | {votos[i]} | {(votos[i] / sum(votos)) * 100}')
+
+# print(votos)
+
+# ------------------------------------ EX3 ----------------------------------- #
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
