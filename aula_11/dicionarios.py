@@ -18,15 +18,38 @@
 #     print(f'chave: {k}, valor: {dicionario[k]}')
 
 # ------------------------------------ EX1 ----------------------------------- #
-d = {
-    'um': 'one',
-    'dois': 'two',
-    'tres': 'three'
-}
+# d = {
+#     'um': 'one',
+#     'dois': 'two',
+#     'tres': 'three'
+# }
 
-def procuraChave(dicio, valor):
+# def procuraChave(dicio, valor):
+#     L = []
 
-    for valor in dicio.values():
-        print(dicio)
+#     for chave in dicio:
+#         if dicio[chave] == valor:
+#             L.append(chave)
 
-procuraChave(d, 'one')
+#     return L
+
+
+
+# print(procuraChave(d, 'one'))
+
+# ------------------------------------ EX2 ----------------------------------- #
+# import random
+
+# numeros = {}
+
+# for i in range(21):
+#     numeros[i] = 0
+
+# for i in range(100):
+#     x = random.randint(0, 20)
+
+#     numeros[x] += 1
+
+# print(numeros)
+
+# ------------------------------------ EX3 ----------------------------------- #
