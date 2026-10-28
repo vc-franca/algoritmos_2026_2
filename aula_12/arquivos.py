@@ -24,13 +24,31 @@
 #         impares.write(str(i) + '\n')
 
 # ------------------------------------ EX1 ----------------------------------- #
+import os
+
 contatos = []
 
+nome_arquivo = 'contatos.txt'
+
 def carregar_contatos():
-    print()
+    if not os.path.exists(nome_arquivo):
+        return
+
+    with open(nome_arquivo, 'r') as arquivo:
+        for linha in arquivo:
+            nome, sobrenome, telefone, email = linha.strip().split(';')
+
+            contatos.append({
+                'nome': nome,
+                'sobrenome': sobrenome,
+                'telefone': telefone,
+                'email': email
+            })
 
 def salvar_contatos():
-    print()
+    with open(nome_arquivo, 'w') as arquivo:
+        for contato in contatos:
+            arquivo.write(f'{contato['nome']}; {contato['sobrenome']}; {contato['telefone']}; {contato['email']}')
 
 def novo_contato():
     nome = input('Digite o nome: ')
@@ -84,6 +102,7 @@ def processa_menu(menu):
 
     return False
 
+carregar_contatos()
 while True:
     carregar_contatos()
     menu()
