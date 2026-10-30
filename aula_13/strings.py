@@ -35,21 +35,43 @@
 # print(palavra)
 
 # ------------------------------------ EX2 ----------------------------------- #
-palavra = input('Digite uma palavra: ')
+# palavra = input('Digite uma palavra: ')
 
-i = 0
-j = len(palavra) - 1
-palindromo = True
+# i = 0
+# j = len(palavra) - 1
+# palindromo = True
 
-while i <= j:
-    if palavra[i] != palavra[j]:
-        palindromo = False
-        break
+# while i <= j:
+#     if palavra[i] != palavra[j]:
+#         palindromo = False
+#         break
 
-    i += 1
-    j -= 1
+#     i += 1
+#     j -= 1
 
-if palindromo:
-    print('é palíndromo')
-else:
-    print('não é palíndromo')
+# if palindromo:
+#     print('é palíndromo')
+# else:
+#     print('não é palíndromo')
+
+# ------------------------------------ EX3 ----------------------------------- #
+# with open('aula_13/arquivo.txt', 'r') as arq:
+#     a = arq.read().split()
+
+# maior = 0
+
+# for i in range(len(a)):
+#     if len(a[i]) > maior:
+#         maior = len(a[i]) + 1 
+
+# print(maior)
+
+# ------------------------------------ EX4 ----------------------------------- #
+with open('aula_13/arquivo2.txt', 'r') as arq:
+    a = arq.read().split()
+
+palavras = [p.lower() for p in a]
+
+for p in palavras:
+    p = [i.isaplha() for i in p]
+
